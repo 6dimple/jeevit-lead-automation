@@ -1,0 +1,29 @@
+2026-10-12 21:30:44,716 | INFO    | Loaded 12 existing leads and 15 incoming leads
+2026-10-12 21:30:44,718 | INFO    | S-01 | added as L-1013 | Hot | via stub
+2026-10-12 21:30:44,720 | INFO    | S-01 | notification: logged to notifications.log (Slack not configured)
+2026-10-12 21:30:44,721 | WARNING | S-02 | duplicate_existing | Already in sheet as L-1001 (tag: Warm).
+2026-10-12 21:30:44,721 | WARNING | S-03 | duplicate_existing | Already in sheet as L-1002 (tag: Hot).
+2026-10-12 21:30:44,721 | WARNING | S-04 | missing_email | No email address provided.
+2026-10-12 21:30:44,721 | WARNING | S-05 | missing_email | No email address provided.
+2026-10-12 21:30:44,721 | WARNING | S-06 | invalid_email | Email 'ben.carter@gmail' is not a valid address.
+2026-10-12 21:30:44,722 | WARNING | S-07 | invalid_email | Email 'sara@@nordicform.se' is not a valid address.
+2026-10-12 21:30:44,722 | INFO    | S-08 | added as L-1014 | Cold | via stub
+2026-10-12 21:30:44,724 | INFO    | S-09 | added as L-1015 | Hot | via stub
+2026-10-12 21:30:44,725 | INFO    | S-09 | notification: logged to notifications.log (Slack not configured)
+2026-10-12 21:30:44,726 | WARNING | S-10 | prompt_injection | Message tried to give instructions to the AI. Human review needed.
+2026-10-12 21:30:44,726 | WARNING | S-11 | spam | Looks like SEO/marketing spam.
+2026-10-12 21:30:44,727 | INFO    | S-12 | added as L-1016 | Warm | via stub
+2026-10-12 21:30:44,727 | WARNING | S-13 | empty_message | Message was empty, so it cannot be tagged.
+2026-10-12 21:30:44,727 | WARNING | S-14 | duplicate_batch | Same person as S-12 in this batch. Extra message merged into it.
+2026-10-12 21:30:44,729 | INFO    | S-15 | notification: logged to notifications.log (Slack not configured)
+2026-10-12 21:30:44,729 | WARNING | S-15 | duplicate_existing | Already in sheet as L-1008 (tag: Warm). New message looks Hot. Consider upgrading from Warm.
+2026-10-12 21:30:44,736 | INFO    | ============================================================
+2026-10-12 21:30:44,736 | INFO    | SUMMARY: 15 received -> 4 added to sheet, 11 need attention
+2026-10-12 21:30:44,736 | INFO    |    duplicate_existing   3
+2026-10-12 21:30:44,737 | INFO    |    missing_email        2
+2026-10-12 21:30:44,737 | INFO    |    invalid_email        2
+2026-10-12 21:30:44,737 | INFO    |    prompt_injection     1
+2026-10-12 21:30:44,737 | INFO    |    spam                 1
+2026-10-12 21:30:44,737 | INFO    |    empty_message        1
+2026-10-12 21:30:44,738 | INFO    |    duplicate_batch      1
+2026-10-12 21:30:44,738 | INFO    | Files: output/leads_final.csv, output/problems.csv, output/notifications.log, output/run.log
